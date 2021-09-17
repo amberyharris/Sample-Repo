@@ -1,6 +1,5 @@
-import sys
-import os
+import requests
 
-print(1)
-name = input("? ")
-print(name)
+r = requests.get("https://coreyms.com")
+print(r.status_code)
+print(r.ok)
